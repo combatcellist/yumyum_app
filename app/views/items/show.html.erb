@@ -36,8 +36,8 @@
 
         <div class="menu-price">
           <h2>[価格]<%= @item.price %>円</h2>
-          <% if user_signed_in? && @item.user_id != current_user.id %>
-           <%# <h3><%= link_to '購入画面に進む', item_orders_path(@item), class:"item-red-btn" %></h3> %>
+           <% if user_signed_in? && @item.user_id != current_user.id %>
+             <h3><%= link_to '購入画面に進む', item_orders_path(@item), class:"item-red-btn" %></h3>
            <% end %>
         </div>
 
